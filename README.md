@@ -145,7 +145,7 @@ python -m mlflow ui
 
 ---
 
-## 💼 Resume Bullet Points
+## 💼 Bullet Points
 
 - Built end-to-end credit default prediction system on 307K+ loan records (Home Credit dataset), achieving ROC-AUC of 0.73 and Recall of 0.68 using XGBoost with SMOTE for class imbalance correction
 - Engineered 4 domain-specific features (debt-income ratio, credit term, age, employment years) and applied one-hot encoding across 10 categorical variables, expanding feature space to 193 dimensions
