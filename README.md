@@ -196,7 +196,7 @@ credit-risk-predictor/
 ## 👩‍💻 Author
 
 **Priya Kumari**
-[GitHub](https://github.com/PriyaKumari2002) • [LinkedIn](#)
+[GitHub](https://github.com/PriyaKumari2002) • [LinkedIn](https://www.linkedin.com/in/priya374/)
 
 ---
 
