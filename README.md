@@ -11,7 +11,8 @@
 
 ## 🎯 Business Problem
 
-India's NBFC and fintech sector evaluates **millions of thin-file borrowers** with limited credit history every year. Traditional scoring models fail for first-time borrowers.
+India's NBFC and fintech sector evaluates **millions of thin-file borrowers** with limited credit history every year. Traditional scoring models fail for first-time
+borrowers.
 
 **The Cost of Getting It Wrong:**
 
