@@ -1,0 +1,10 @@
+*.csv
+*.pkl
+*.xls
+*.xlsx
+*.db
+mlruns/
+mlartifacts/
+__pycache__/
+*.pyc
+.env
