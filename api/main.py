@@ -3,12 +3,16 @@ from pydantic import BaseModel
 import pandas as pd
 import pickle
 import numpy as np
+from pathlib import Path
 
-# Model aur features load karo
-with open('C:/Users/kmpri/Desktop/credit-risk-predictor/src/model.pkl', 'rb') as f:
+BASE_DIR = Path(__file__).parent.parent
+MODEL_PATH = BASE_DIR / "src" / "model.pkl"
+FEATURES_PATH = BASE_DIR / "src" / "feature_names.pkl"
+
+with open(MODEL_PATH, 'rb') as f:
     model = pickle.load(f)
 
-with open('C:/Users/kmpri/Desktop/credit-risk-predictor/src/feature_names.pkl', 'rb') as f:
+with open(FEATURES_PATH, 'rb') as f:
     feature_names = pickle.load(f)
 
 app = FastAPI()
@@ -27,10 +31,8 @@ def home():
 
 @app.post("/predict")
 def predict(data: LoanApplication):
-    # Saare features ke saath empty dataframe banao
     input_df = pd.DataFrame([np.zeros(len(feature_names))], columns=feature_names)
     
-    # Sirf jo features mile unhe fill karo
     input_df['EXT_SOURCE_2'] = data.EXT_SOURCE_2
     input_df['EXT_SOURCE_3'] = data.EXT_SOURCE_3
     input_df['AGE_YEARS'] = data.AGE_YEARS
